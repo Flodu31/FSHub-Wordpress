@@ -9,14 +9,14 @@ Integrate FSHub into your Wordpress website
 <?php
 $curl = curl_init();
 curl_setopt_array($curl, array(
-    CURLOPT_URL => "https://fshub.io/api/v3/airline/1099/flight",
+    CURLOPT_URL => "https://fshub.io/api/v3/airline/theIdOfYourAirline/flight",
     CURLOPT_RETURNTRANSFER => true,
     CURLOPT_TIMEOUT => 30,
     CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
     CURLOPT_CUSTOMREQUEST => "GET",
     CURLOPT_HTTPHEADER => array(
         'Content-Type: application/json',
-        'X-Pilot-Token: aoOlC06SjzgOwsCmp1QS82z5iLM59Yz7XS7efNWvqOWrkOX7JqGpTqwm2AsE'
+        'X-Pilot-Token: yourtoken'
     ),
   ));
 
@@ -86,4 +86,4 @@ $totalId = count ($result['data']);
 </html>
 ```
 
-4. 
+4. Update **theIdOfYourAirline** with the ID of your airline and **yourtoken** with your token. You can also update the URL **https://fshub.io/airline/SPP/flights** with the full URL of your VA.
