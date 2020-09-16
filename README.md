@@ -2,7 +2,7 @@
 Integrate FSHub into your Wordpress website
 
 1. Install Insert PHP Code Snippet extension => https://xyzscripts.com/
-2. Create a new PHP Code snippet
+2. Create a new PHP Code snippet and note the name that you gave
 3. Add the following code:
 
 ```
@@ -87,3 +87,8 @@ $totalId = count ($result['data']);
 ```
 
 4. Update **theIdOfYourAirline** with the ID of your airline and **yourtoken** with your token. You can also update the URL **https://fshub.io/airline/SPP/flights** with the full URL of your VA.
+5. To see the table, create a page, and add the following code, with the name that your provided in step 2:
+
+```
+[xyz-ips snippet="AAA"]
+```
